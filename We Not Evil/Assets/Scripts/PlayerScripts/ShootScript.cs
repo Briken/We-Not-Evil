@@ -24,7 +24,7 @@ public class ShootScript : MonoBehaviour
         mouseX = Input.mousePosition.x;         
         mouseY = Input.mousePosition.y;
         Instantiate(bullet, fireSpot.transform.position, Quaternion.identity);
-       // Camera camera = GetComponent<Camera>();
+       
         targetPoint = Camera.main.ScreenToWorldPoint(new Vector3(mouseX, mouseY, 0));
        }
 	}

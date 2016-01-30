@@ -46,9 +46,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\BulletMove.cs" />
-     <Compile Include="Assets\Scripts\EnemyFollow.cs" />
-     <Compile Include="Assets\Scripts\ShootScript.cs" />
+     <Compile Include="Assets\Scripts\EnemyScripts\AIBehaviourScript.cs" />
+     <Compile Include="Assets\Scripts\EnemyScripts\EnemyBulletScript.cs" />
+     <Compile Include="Assets\Scripts\EnemyScripts\EnemyFollow.cs" />
+     <Compile Include="Assets\Scripts\EnemyScripts\EnemyRocketScript.cs" />
+     <Compile Include="Assets\Scripts\EnemyScripts\Ledgescript.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\BulletCollide.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\BulletMove.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\ShootScript.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />

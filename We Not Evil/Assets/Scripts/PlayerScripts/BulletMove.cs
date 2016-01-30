@@ -16,7 +16,6 @@ public class BulletMove : MonoBehaviour
 
         target = ShootScript.targetPoint;
         StartCoroutine(KillBullet());
-        player = GameObject.Find("Player");
 	}
 	
 	// Update is called once per frame
