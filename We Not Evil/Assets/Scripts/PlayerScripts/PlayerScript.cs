@@ -32,7 +32,7 @@ public class PlayerScript : MonoBehaviour
     }
 
 
-    void onTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Enemy")
         {
@@ -40,7 +40,7 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
-    void onTriggerLeave2D(Collider2D other)
+    void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.tag == "Enemy")
         {
