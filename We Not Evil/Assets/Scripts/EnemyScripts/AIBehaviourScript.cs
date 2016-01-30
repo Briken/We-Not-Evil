@@ -24,7 +24,7 @@ public class AIBehaviourScript : MonoBehaviour
 
     public GameObject bullet;
     public GameObject rocket;
-
+    public int fireRate;
 
 
 
@@ -73,9 +73,8 @@ public class AIBehaviourScript : MonoBehaviour
             }
 
             //now start firing
-            StartCoroutine(Wait1Secs());
-            Instantiate(bullet, this.gameObject.transform.position, Quaternion.identity);//This makes a bullet, to be fired at the hero.
-
+            StartCoroutine(fireTime());
+            
         }
 
 
@@ -183,40 +182,21 @@ public class AIBehaviourScript : MonoBehaviour
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
 
     }
 
 
 
 
-
+    IEnumerator fireTime()
+    {
+        while (PlayerScript.isTarget == true)
+        {
+            yield return new WaitForSeconds(fireRate);
+            Instantiate(bullet, this.gameObject.transform.position, Quaternion.identity);//This makes a bullet, to be fired at the hero.
+        }
+    }
 
 
 

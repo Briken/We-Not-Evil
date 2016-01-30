@@ -17,7 +17,7 @@ public class BulletCollide : MonoBehaviour {
 
     void OnCollisionEnter(Collision collided)
     {
-        if (collided.gameObject.tag == "enemy")
+        if (collided.gameObject.tag == "Enemy")
         {
             Destroy(collided.gameObject);
         }

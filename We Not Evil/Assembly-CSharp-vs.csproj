@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\EnemyScripts\Ledgescript.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\BulletCollide.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\BulletMove.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\PlayerScript.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\ShootScript.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
