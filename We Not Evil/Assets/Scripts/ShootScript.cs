@@ -17,7 +17,7 @@ public class ShootScript : MonoBehaviour
     {
        if (Input.GetMouseButtonDown(0))
        {
-        bullet = (GameObject)Instantiate(bullet, fireSpot.transform.position, Quaternion.identity);
+        Instantiate(bullet, fireSpot.transform.position, Quaternion.identity);
 
        }
 	}
